@@ -29,7 +29,7 @@ const projects = [
       "Developed a comprehensive mobile application using React Native, Expo, and TypeScript to streamline medical scheduling. Designed secure, role-specific interfaces for Patients, Doctors, and Administrators with features including virtual and in-clinic appointment booking. Integrated Firebase Authentication, Cloud Firestore, and Cloud Functions to deliver real-time data synchronization and secure administrative operations.",
     tech: ["React Native", "Expo", "TypeScript", "Expo Router", "Firebase"],
     github: "https://github.com/SharifKhaqan/Appointment-App",
-    demo: "https://expo.dev/accounts/shery901/projects/appointmentApp/builds/63dfa6f2-affb-4ea1-817d-290be34719a9",
+    demo: "https://expo.dev/artifacts/eas/oKP7npuv8bZrhghxe37z73.apk",
     color: "from-cyan-500/20 via-indigo-500/10 to-transparent",
     icon: SmartPhone01Icon,
   },
@@ -200,7 +200,7 @@ export default function Projects() {
                           rel="noopener noreferrer"
                           className="flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors duration-200 ml-auto group/link"
                         >
-                          <span>Live Preview</span>
+                          <span>{proj.category === "mobile" ? "Apk Link" : "Live Preview"}</span>
                           <HugeiconsIcon
                             icon={ArrowUpRight01Icon}
                             className="size-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-200"
