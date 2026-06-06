@@ -61,7 +61,7 @@ export default function Experience() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-cyan-500 origin-top transform md:-translate-x-1/2"
+            className="absolute left-4 lg:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-cyan-500 origin-top transform lg:-translate-x-1/2"
           />
 
           {/* Timeline Cards */}
@@ -72,13 +72,13 @@ export default function Experience() {
               return (
                 <div
                   key={idx}
-                  className={`flex flex-col md:flex-row items-start md:items-center relative w-full ${
-                    isEven ? "md:justify-start" : "md:justify-end"
+                  className={`flex flex-col lg:flex-row items-start lg:items-center relative w-full pl-12 lg:pl-0 ${
+                    isEven ? "lg:justify-start" : "lg:justify-end"
                   }`}
                 >
                   
                   {/* Timeline Node Point */}
-                  <div className="absolute left-4 md:left-1/2 top-1.5 md:top-1/2 transform -translate-y-1/2 md:-translate-x-1/2 z-20 flex items-center justify-center size-8 rounded-full border-2 border-indigo-500 bg-black shadow-lg shadow-indigo-500/30">
+                  <div className="absolute left-4 lg:left-1/2 top-1.5 lg:top-1/2 transform -translate-y-1/2 lg:-translate-x-1/2 z-20 flex items-center justify-center size-8 rounded-full border-2 border-indigo-500 bg-black shadow-lg shadow-indigo-500/30">
                     <HugeiconsIcon
                       icon={Briefcase01Icon}
                       className="size-3.5 text-cyan-400"
@@ -91,7 +91,7 @@ export default function Experience() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className={`w-full md:w-[calc(50%-2rem)] ml-12 md:ml-0 glass rounded-3xl p-6 sm:p-8 hover:border-white/10 transition-colors duration-300 relative group`}
+                    className={`w-full lg:w-[calc(50%-2rem)] glass rounded-3xl p-6 sm:p-8 hover:border-white/10 transition-colors duration-300 relative group`}
                   >
                     {/* Glowing highlight orb on hover */}
                     <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-tr from-indigo-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 pointer-events-none" />
